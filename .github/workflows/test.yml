@@ -1,0 +1,270 @@
+# name: GlobalProtect VPN
+
+# on:
+#   workflow_dispatch:
+
+# jobs:
+#   vpn:
+#     # runs-on: [self-hosted, test-1]
+#     runs-on: macos-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3
+
+#       - name: Install OpenConnect
+#         run: |
+#           if ! brew install openconnect; then
+#             echo "Installation failed"
+#             exit 1
+#           fi
+
+#       - name: Disconnect from VPN
+#         run: sudo pkill openconnect || echo "No existing openconnect process"
+
+#       - name: Start VPN connection
+#         run: |
+#           nohup sudo openconnect --user=VTeji --passwd-on-stdin --protocol=gp --authgroup=GP_Gateway vpn1.rivcoca.org <<< "zwt3dtw@gdm.HDB.uak" & > nohup.out 2> nohup.err < /dev/null &
+
+#       - name: Verify website is up
+#         run: |
+#           echo "Checking if website is accessible..."
+#           WEBSITE_URL="https://rivcoemd.dev-rivcoweb.acsitefactory.com/"
+#           until curl -k "$WEBSITE_URL"; do
+#             echo "Website is not up. Retrying in 10 seconds..."
+#             sleep 10
+#           done
+#           echo "Website is up!"
+
+#       - name: Run Cypress Tests
+#         run: |
+#           npm install
+#           npm run harivco:dev-vpn
+
+#       - name: Disconnect from VPN
+#         run: sudo pkill openconnect
+
+
+
+
+
+
+
+
+# name: Riverside Automated Tests
+
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       site:
+#         description: "Select a website"
+#         required: true
+#         type: choice
+#         options:
+#           - harivco
+#           - rchr
+#           - rivco
+#           - rivcoed
+#           - rivcoeh
+#           - voteinfo
+#           - auditorcontroller
+#           - rivcoveterans
+#           - capriverside
+#           - countytreasurer
+#           - purchasing
+#           - supervisorchuckwashington
+#           - rivcoworkforce
+#           - rivcoyac
+#           - rivcotv
+#           - rivcoparks
+#           - rctlma
+#           - rivcodpss
+#           - rivcoemd
+#           - rivcocob
+#           - rivcocounsel
+#           - hope2home
+#           - rivcoprobation
+#           - rivcopublicdefender
+#           - qualitystartrc
+#           - rcaging
+#           - rcaluc
+#           - rccfc
+#           - rcdas
+#           - rcflood
+#           - rcfva
+#           - rchmtra
+#           - rcjcra
+#           - rctlmabuilding
+#           - rctlmace
+#           - rctlmaplanning
+#           - rctlmatrans
+#           - rcwaste
+#           - rivco4
+#           - rivcoawm
+#           - rivcoconnect
+#           - rivcoda
+#           - rivcodcss
+#           - rivcodistrict1
+#           - rivcodistrict2
+#           - rivcodistrict5
+#           - rivcofm
+#           - rivcohhpws
+#       environment:
+#         description: "Select environment"
+#         required: true
+#         type: choice
+#         options:
+#           - dev
+#           - prod
+
+# jobs:
+#   cypress-tests:
+#     runs-on: macos-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v3
+
+#       - name: Install OpenConnect
+#         run: |
+#           if ! brew install openconnect; then
+#             echo "Installation failed"
+#             exit 1
+#           fi
+
+#       - name: Disconnect from VPN
+#         run: sudo pkill openconnect || echo "No existing openconnect process"
+
+#       - name: Start VPN connection (if needed)
+#         run: |
+#           echo "Starting VPN connection for site ${{ github.event.inputs.site }}..."
+#           nohup sudo openconnect --user=VTeji --passwd-on-stdin --protocol=gp --authgroup=GP_Gateway vpn1.rivcoca.org <<< "zwt3dtw@gdm.HDB.uak" & > nohup.out 2> nohup.err < /dev/null &
+
+#       - name: Verify website is up
+#         run: |
+#           echo "Checking if the website is accessible..."
+#           WEBSITE_URL=$(jq -r ".${{ github.event.inputs.site }}.${{ github.event.inputs.environment }}" cypress/fixtures/sites.json)
+#           until curl -k "$WEBSITE_URL"; do
+#             echo "Website is not up. Retrying in 10 seconds..."
+#             sleep 10
+#           done
+#           echo "$WEBSITE_URL is up!"
+
+#       - name: Install dependencies
+#         run: npm install
+
+#       - name: Run Cypress Tests
+#         run: |
+#           echo "Running Cypress tests for ${{ github.event.inputs.site }} in ${{ github.event.inputs.environment }} environment..."
+#           npm run ${{ github.event.inputs.site }}:${{ github.event.inputs.environment }}
+
+#       - name: Disconnect from VPN
+#         run: sudo pkill openconnect
+
+
+name: Riverside Automated Tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Select environment"
+        required: true
+        type: choice
+        options:
+          - dev
+          - prod
+
+jobs:
+  cypress-tests:
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        site:
+          - harivco
+          - rchr
+          - rivco
+          # - rivcoed
+          # - rivcoeh
+          # - voteinfo
+          # - auditorcontroller
+          # - rivcoveterans
+          # - capriverside
+          # - countytreasurer
+          # - purchasing
+          # - supervisorchuckwashington
+          # - rivcoworkforce
+          # - rivcoyac
+          # - rivcotv
+          # - rivcoparks
+          # - rctlma
+          # - rivcodpss
+          # - rivcoemd
+          # - rivcocob
+          # - rivcocounsel
+          # - hope2home
+          # - rivcoprobation
+          # - rivcopublicdefender
+          # - qualitystartrc
+          # - rcaging
+          # - rcaluc
+          # - rccfc
+          # - rcdas
+          # - rcflood
+          # - rcfva
+          # - rchmtra
+          # - rcjcra
+          # - rctlmabuilding
+          # - rctlmace
+          # - rctlmaplanning
+          # - rctlmatrans
+          # - rcwaste
+          # - rivco4
+          # - rivcoawm
+          # - rivcoconnect
+          # - rivcoda
+          # - rivcodcss
+          # - rivcodistrict1
+          # - rivcodistrict2
+          # - rivcodistrict5
+          # - rivcofm
+          # - rivcohhpws
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install OpenConnect
+        run: |
+          if ! brew install openconnect; then
+            echo "Installation failed"
+            exit 1
+          fi
+
+      - name: Disconnect from VPN
+        run: sudo pkill openconnect || echo "No existing openconnect process"
+
+      - name: Start VPN connection (if needed)
+        run: |
+          echo "Starting VPN connection for site ${{ matrix.site }}..."
+          nohup sudo openconnect --user=VTeji --passwd-on-stdin --protocol=gp --authgroup=GP_Gateway vpn1.rivcoca.org <<< "zwt3dtw@gdm.HDB.uak" & > nohup.out 2> nohup.err < /dev/null &
+
+      - name: Verify website is up
+        run: |
+          echo "Checking if the website is accessible..."
+          WEBSITE_URL=$(jq -r ".${{ matrix.site }}.${{ github.event.inputs.environment }}" cypress/fixtures/sites.json)
+          until curl -k "$WEBSITE_URL"; do
+            echo "Website is not up. Retrying in 10 seconds..."
+            sleep 10
+          done
+          echo "$WEBSITE_URL is up!"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Cypress Tests
+        run: |
+          echo "Running Cypress tests for ${{ matrix.site }} in ${{ github.event.inputs.environment }} environment..."
+          npm run ${{ matrix.site }}:${{ github.event.inputs.environment }}
+
+      - name: Disconnect from VPN
+        run: sudo pkill openconnect

@@ -1,0 +1,288 @@
+{
+    "harivco": {
+      "dev": "https://harivco.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://harivco.org",
+      "password": "nwz8ryr7eyv3gmf@MWX"
+    },
+    "rchr": {
+      "dev": "https://rchr.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rc-hr.com/",
+      "password": "bzb4cdz8wyb_cdk*CDA"
+    },
+    "rivco": {
+      "dev": "https://rivco.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivco.org",
+      "password": "mng1qfp*awz9gkf4HKX"
+    },
+    "rivcoed": {
+      "dev": "https://rivcoed.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcoed.org",
+      "password": "wkq-jyz9fhu-VPH*kqg"
+
+    },
+    "rivcoeh": {
+      "dev": "https://rivcoeh.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcoeh.org",
+      "password": "faq3mkj*xmy8JUK-wya"
+
+    },
+    "voteinfo": {
+      "dev": "https://voteinfo.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://voteinfo.net",
+      "password": "cah4tej@rma8NRQ@pjv"
+
+    },
+    "auditorcontroller": {
+      "dev": "https://auditorcontroller.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://auditorcontroller.org",
+      "password": "xva8urq@tpm_yph8FMT"
+
+    },
+    "rivcoveterans": {
+      "dev": "https://veteranservices.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcoveterans.org/",
+      "password": "mjz2zcp_kud0KRD4ckg"
+
+    },
+    "capriverside": {
+      "dev": "https://capriverside.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://capriverside.org",
+      "password": "WDU!bry8pvw_men-chv"
+
+    },
+    "countytreasurer": {
+      "dev": "http://countytreasurer.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://countytreasurer.org",
+      "password": "wjc3bxd8cpc3vng.FGK"
+
+    },
+    "purchasing": {
+      "dev": "http://purchasing.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://purchasing.co.riverside.ca.us",
+      "password": "UZP3xdx9duz.qyr.fjy"
+
+    },
+    "supervisorchuckwashington": {
+      "dev": "https://supervisorchuckwashington.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://supervisorchuckwashington.com/",
+      "password": "jkb@qxf6ayq*RVJ.dyd"
+
+    },
+    "rivcoworkforce": {
+      "dev": "https://rivcoworkforce.dev-rivcoweb.acsitefactory.com/",
+      "prod": "http://rivcoworkforce.org/",
+      "password": "ben3BQV3crc_qra7ujb"
+
+    },
+    "rivcoyac": {
+      "dev": "https://rivcoyac.dev-rivcoweb.acsitefactory.com",
+      "prod": "https://rivcoyac.org/",
+      "password": "uxa@HTK8acn1nwb8rjf"
+
+    },
+    "rivcotv": {
+      "dev": "https://rivcotv.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcotv.org/",
+      "password": "yhq-XUH2efg_vgd7fua"
+
+    },
+    "rivcoparks": {
+      "dev": "http://rivcoparks.dev-rivcoweb.acsitefactory.com/",
+      "prod": "http://rivcoparks.org/",
+      "password": "fhm3RNG6wny4eku!dnb"
+
+    },
+    "rctlma": {
+      "dev": "https://rctlma.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rctlma.org/",
+      "password": "gac2rmr1DKV*wew5amy"
+
+    },
+    "rivcodpss": {
+      "dev": "https://rivcodpss.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcodpss.org/",
+      "password": "cec9ewj3xae.vuk-UMU"
+
+    },
+    "rivcoemd": {
+      "dev": "https://rivcoemd.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcoready.org/",
+      "password": "hfg9JWH9ade0hqn_mwe"
+
+    },
+    "rivcocob": {
+      "dev": "https://rivcocob.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcocob.org",
+      "password": "uxm!DXC!fue0brg6qhg"
+
+    },
+    "rivcocounsel": {
+      "dev": "https://countycounsel.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivco-counsel.org",
+      "password": "cjr4jpt2qkw_pyd7HUF"
+
+    },
+    "hope2home": {
+      "dev": "https://hope2home.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://hope2home.rivcohws.org/",
+      "password": "emv!jbw!HUQ2kuj0xkp"
+
+    },
+    "rivcoprobation": {
+      "dev": "https://probation.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcoprobation.org",
+      "password": "ueu!AFB*cug7bma6ghf"
+
+    },
+    "rivcopublicdefender": {
+      "dev": "http://publicdef.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcopublicdefender.org",
+      "password": "uwx8xme-QXY7brh9fyq"
+
+    },
+    "qualitystartrc": {
+      "dev": "https://qualitystartrc.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://qualitystartrc.org",
+      "password": "tda2GFR0dkr_rmd@vyj"
+
+    },
+    "rcaging": {
+      "dev": "https://rcaging.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rcaging.org/",
+      "password": "pqv7jbx5NDZ1bav*yqp"
+
+    },
+    "rcaluc": {
+      "dev": "https://rcaluc.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rcaluc.org",
+      "password": "zne@nkv9ytr@DCF0xrb"
+
+    },
+    "rccfc": {
+      "dev": "https://rccfc.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rccfc.org",
+      "password": "JCF3qyg8uyh!ftc@hph"
+
+    },
+    "rcdas": {
+      "dev": "https://rcdas.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rcdas.org",
+      "password": "cyu9fye-WTY.xna2jpa"
+
+    },
+    "rcflood": {
+      "dev": "https://rcflood.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rcflood.org",
+      "password": "DCR.frb4mcg4nce5quq"
+
+    },
+    "rcfva": {
+      "dev": "https://rcfva.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rcfva.com",
+      "password": "fdr@fjf5cxb8HZA8zvw"
+
+    },
+    "rchmtra": {
+      "dev": "https://rchmtra.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rchmtra.com",
+      "password": "GRC1fum6gju5xbz!hqx"
+
+    },
+    "rcjcra": {
+      "dev": "https://rcjcra.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rcjcra.com",
+      "password": "hwd0qvd@dxf7zhc.KCB"
+
+    },
+    "rctlmabuilding": {
+      "dev": "https://rctlmabuilding.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://building.rctlma.org",
+      "password": "btu*dmz.hma2ZUZ*kgp"
+
+    },
+    "rctlmace": {
+      "dev": "https://rctlmace.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://ce.rctlma.org/",
+      "password": "tkr*jnc3AVP0vrp@wmb"
+
+    },
+    "rctlmaplanning": {
+      "dev": "https://rctlmaplanning.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://planning.rctlma.org",
+      "password": "azt.jrj8UYG-zeg.dqm"
+
+    },
+    "rctlmatrans": {
+      "dev": "https://rctlmatrans.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://trans.rctlma.org/",
+      "password": "QDX6hqn5xuw0fkf.wfu"
+
+    },
+    "rcwaste": {
+      "dev": "https://rcwaste.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rcwaste.org",
+      "password": "rca1pcb2HND*xmu_quw"
+
+    },
+    "rivco4": {
+      "dev": "https://rivco4.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivco4.org",
+      "password": "cpk*BYD6edq-jyg@mag"
+
+    },
+    "rivcoawm": {
+      "dev": "https://rivcoawm.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcoawm.org",
+      "password": "yre!vrp1npt@kbp4DBC"
+
+    },
+    "rivcoconnect": {
+      "dev": "https://rivcoconnect.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcoconnect.org",
+      "password": "KRD!pru6utp@ndm!bhm"
+
+    },
+    "rivcoda": {
+      "dev": "https://rivcoda.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcoda.org",
+      "password": "wmh2hqe5NUF@ebq3wph"
+
+    },
+    "rivcodcss": {
+      "dev": "https://rivcodcss.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcodcss.com",
+      "password": "mfb2crg-wxy2BCZ@nqy"
+
+    },
+    "rivcodistrict1": {
+      "dev": "https://rivcodistrict1.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcodistrict1.org",
+      "password": "hna3bua*AFX_pzf_jwf"
+
+    },
+    "rivcodistrict2": {
+      "dev": "https://rivcodistrict2.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcodistrict2.org",
+      "password": "AHC9rwj1umz7wyd-xah"
+
+    },
+    "rivcodistrict5": {
+      "dev": "https://rivcodistrict5.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcodistrict5.org",
+      "password": "fwt9cmv@QAP0tvu-rht"
+
+    },
+    "rivcofm": {
+      "dev": "https://rivcofm.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcofm.org",
+      "password": "HWQ@gtw_tqd1ndv0wdc"
+
+    },
+    "rivcohhpws": {
+      "dev": "https://rivcohhpws.dev-rivcoweb.acsitefactory.com/",
+      "prod": "https://rivcohhpws.org/",
+      "password": "wzm-NGV5xuz4tfh4mpy"
+
+    }
+  }
+  
