@@ -179,6 +179,7 @@ jobs:
   cypress-tests:
     runs-on: macos-latest
     strategy:
+      fail-fast: false
       matrix:
         site:
           - harivco
