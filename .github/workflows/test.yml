@@ -255,7 +255,7 @@ jobs:
       - name: Verify website is up
         run: |
           echo "Checking if the website is accessible..."
-          WEBSITE_URL=$(jq -r ".${{ matrix.site }}.${{ github.event.inputs.environment }}" cypress/fixtures/sites.json)
+          WEBSITE_URL=$(jq -r ".${{ matrix.site }}.${{ github.event.inputs.environment }}" test-automation/cypress/fixtures/sites.json)
           until curl -k "$WEBSITE_URL"; do
             echo "Website is not up. Retrying in 10 seconds..."
             sleep 10
